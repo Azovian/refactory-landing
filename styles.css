@@ -57,11 +57,15 @@ body {
 }
 
 .logo {
-  color: var(--accent);
-  font-size: 1.35rem;
-  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
-  letter-spacing: 0.04em;
+}
+
+.logo img {
+  height: 22px;
+  width: auto;
+  display: block;
 }
 
 .top-nav {
@@ -605,10 +609,14 @@ main p {
   background: var(--bg-soft);
   display: grid;
   place-items: center;
-  font-size: clamp(2rem, 4vw, 3.2rem);
-  font-weight: 800;
-  line-height: 1.04;
-  letter-spacing: 0.2em;
+  padding: 24px;
+}
+
+.logo-box img {
+  width: min(92%, 520px);
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
 
 .contact-box {
